@@ -24,7 +24,8 @@ class _BodyState extends State<Body> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: Theme.of(context).colorScheme.inversePrimary,
+        backgroundColor: const Color.fromRGBO(180, 180, 255, 1),
+        centerTitle: true,
         title: const Text("Contrôle Flutter"),
       ),
       body: Center(
@@ -39,12 +40,24 @@ class _BodyState extends State<Body> {
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
                   TextButton(
+                    style: TextButton.styleFrom(
+                      backgroundColor: const Color.fromRGBO(180, 180, 255, 0.5),
+                      padding: const EdgeInsets.all(20)
+                    ),
                     onPressed: () => _incrementCounter("1"),
                     child: const Text("1")),
                   TextButton(
+                    style: TextButton.styleFrom(
+                      backgroundColor: const Color.fromRGBO(180, 180, 255, 0.5),
+                      padding: const EdgeInsets.all(20)
+                    ),
                     onPressed: () => _incrementCounter("4"),
                     child: const Text("4")),
                   TextButton(
+                    style: TextButton.styleFrom(
+                      backgroundColor: const Color.fromRGBO(180, 180, 255, 0.5),
+                      padding: const EdgeInsets.all(20)
+                    ),
                     onPressed: () => _incrementCounter("7"),
                     child: const Text("7"))
               ]),
@@ -52,12 +65,24 @@ class _BodyState extends State<Body> {
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
                   TextButton(
+                    style: TextButton.styleFrom(
+                      backgroundColor: const Color.fromRGBO(180, 180, 255, 0.5),
+                      padding: const EdgeInsets.all(20)
+                    ),
                     onPressed: () => _incrementCounter("2"),
                     child: const Text("2")),
                   TextButton(
+                    style: TextButton.styleFrom(
+                      backgroundColor: const Color.fromRGBO(180, 180, 255, 0.5),
+                      padding: const EdgeInsets.all(20)
+                    ),
                     onPressed: () => _incrementCounter("5"),
                     child: const Text("5")),
                   TextButton(
+                    style: TextButton.styleFrom(
+                      backgroundColor: const Color.fromRGBO(180, 180, 255, 0.5),
+                      padding: const EdgeInsets.all(20)
+                    ),
                     onPressed: () => _incrementCounter("8"),
                     child: const Text("8"))
               ]),
@@ -65,20 +90,35 @@ class _BodyState extends State<Body> {
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
                   TextButton(
+                    style: TextButton.styleFrom(
+                      backgroundColor: const Color.fromRGBO(180, 180, 255, 0.5),
+                      padding: const EdgeInsets.all(20)
+                    ),
                     onPressed: () => _incrementCounter("3"),
                     child: const Text("3")),
                   TextButton(
+                    style: TextButton.styleFrom(
+                      backgroundColor: const Color.fromRGBO(180, 180, 255, 0.5),
+                      padding: const EdgeInsets.all(20)
+                    ),
                     onPressed: () => _incrementCounter("6"),
                     child: const Text("6")),
                   TextButton(
+                    style: TextButton.styleFrom(
+                      backgroundColor: const Color.fromRGBO(180, 180, 255, 0.5),
+                      padding: const EdgeInsets.all(20)
+                    ),
                     onPressed: () => _incrementCounter("9"),
                     child: const Text("9"))
                   ],
                 ),
               ],
-
             ),
             TextButton(
+              style: TextButton.styleFrom(
+                      backgroundColor: const Color.fromRGBO(180, 180, 255, 0.5),
+                      padding: const EdgeInsets.all(20)
+                    ),
               onPressed: () => _incrementCounter("0"),
               child: const Text("0")),
           ],

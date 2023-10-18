@@ -24,6 +24,7 @@ class _MyWidgetState extends State<MyWidget> {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+        debugShowCheckedModeBanner: false,
         title: 'Flutter Demo',
         theme: ThemeData(
           colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
@@ -31,6 +32,7 @@ class _MyWidgetState extends State<MyWidget> {
         ),
         home: Scaffold(
           body: Body(state: change),
+          floatingActionButtonLocation: FloatingActionButtonLocation.centerFloat,
           floatingActionButton: FloatingActionButton.extended(
             onPressed: () => _changeimage(),
             label: const Text("Voir l'image"),

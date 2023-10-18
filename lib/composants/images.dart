@@ -13,7 +13,13 @@ class _ImageComposantState extends State<ImageComposant> {
   @override
   Widget build(BuildContext context) {
     return Center(
-      child: Image(image: NetworkImage(images[int.parse(widget.index)]))
+      child: Container(
+        width: 260,
+        height: 260,
+        decoration: BoxDecoration(
+          borderRadius: BorderRadius.circular(8.0)),
+        child: Image.network(images[int.parse(widget.index)])
+      )
     );
   }
 }
